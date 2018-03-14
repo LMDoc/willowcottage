@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Willow Cottage | Barnsley</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="./images/tree.png">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+	<header>
+		<div class="nav-bar">
+			<img src="./images/logo.png">
+		
+			<ul>
+				<li><button class="btn" href="#" data-value=".features">FEATURES</button></li>
+				<li><button class="btn" href="#" data-value=".location">LOCATION</button></li>
+				<li><button class="btn" href="#" data-value="3">EXPLORE</button></li>
+			</ul>
+		</div>
+		<div class="main-header">
+			<div class="main-fade">
+				<h1>Willow Cottage</h1>
+				<h3>Relax in the heart of Yorkshire</h3>
+				<button class="btn" id="explore" data-value=".features">EXPLORE</button>
+			</div>
+		</div>
+	</header>
+	
+	<!-- FEATURES -->
+	<div class="features">
+		<ul>
+			<li>Swimming Pool</li>
+			<li>Wood Burner (Gas)</li>
+			<li>Garden Patio</li>
+			
+		</ul>
+		<ul>
+			<li>WiFi <i class="fas fa-wifi"></i></li>
+			<li>Dishwasher</li>
+			<li>Washing Machine</li>
+		</ul>
+		<ul>
+			<li>Smoke-Free</li>
+			<li>Off Road Parking</li>
+			<li>Cot Available</li>
+		</ul>
+		<!-- <img src="./images/J487-7.jpg"> -->
+	</div>
+
+	<!-- GALLERY -->
+	<div class="gallery">
+		<div class="info">
+			<p>This single storey, detached cottage is located in the village of Penistone.</p><br>
+			<p>French doors from the sitting and dining area, take you out to a pretty patio area where you can make the most of a sunny afternoon with a refreshing drink. </p><br>
+			<p>For an extra touch, a swimming pool is available for use when not hired out to swimming clubs and the owner can confirm specified times; sure to make a lovely addition to your holiday.</p><br>
+			<p>Why not explore the village of Penistone with its open countryside, woodlands and weekly market. There is plenty to see in this spectacular location.</p><br>
+			<h3>To make a booking<br><i class="fas fa-phone"> </i> 01226 761975<br><i class="far fa-envelope-open"> </i> <a href='mailto:lightworkerstattoo@gmail.com'>contact@willowlodgeuk.com</a></h3>	
+		</div>
+		<div class="gallery-container">
+			<img id="slider" src="./images/inside1.jpg">
+		</div>
+	</div>
+
+	<div class="location">
+		<div id="map"></div>
+		<div class="map-info">
+		<h2>Where are we?</h2>
+		<p>Less than 5 miles from J37 of the M1, Willow Cottage is located in the grounds of Willowlodge at Hoylandswaine, on the outskirts of Penistone.<br><br>
+		Directly off the A629 (Halifax Road) approx. 200m from Hoylandswaine Roundabout when heading in the direction of Huddersfield, the first driveway on th right-hand side, signed Willowlodge.</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0REtc3EHG6dXnZJaEepsPHqyvzWe-XVg&callback=initMap"></script>
+</body>
+</html>
