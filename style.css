@@ -278,6 +278,27 @@ footer p, footer a, footer h4 {
 }
 
 @media only screen and (max-width : 1050px) { 
+	
+	.nav-bar img {
+		display: none;
+	}
+
+	.nav-bar {
+		justify-content: center;
+		height: 110px;
+	}
+
+	.nav-bar button {
+		padding: 20px 30px;
+		font-size: 18px;
+		margin: 0 20px;
+	}
+
+	.main-fade button {
+		padding: 20px 30px;
+		font-size: 18px;
+	}
+
 	.info p, .map-info p, .local-info p {
 		font-size: 14px;
 	}
@@ -299,10 +320,6 @@ footer p, footer a, footer h4 {
 		border-bottom: 5px solid white; 
 	}
 
-	.card {
-		height: 240px;
-	}
-
 	.location {
 		flex-direction: column;
 		justify-content: space-between;
@@ -322,119 +339,47 @@ footer p, footer a, footer h4 {
 		text-align: center;
 	}
 
-	.local {
-		height: 350px;
-	}
-
 	.local-info {
 		text-align: center;
-		font-size: 14px;
 	}
 
 	.local {
 		flex-direction: column;
-		height: 800px;
 	}
 
 	.cards {
 		flex-direction: column;
 		align-items: center;
-		width: 60%;
 		margin-bottom: 25px;
 	}
 
 	.card {
 		text-align: center;
 		border: 3px solid white;
-		width: 50%;
 		margin-bottom: 0;
-	}
-
-	.cards .card p {
-		margin: 10px 0;
+		height: 500px;
+		width: 500px;
 	}
 
 	.card img {
-		/*height: 70%;*/
-		width: 100%;
 		border-top: 3px solid white;
 	} 
-}
 
-
-
-/* MOBILE STYLES */
-@media only screen and (max-width : 479px) {
-	
-	.main-header button, .nav-bar button {
-		padding: 6px 12px;
+	.card p {
+	font-size: 30px;
+	margin-bottom: 45px;
 	}
 
-	.main-header h1 {
-		font-size: 48px;
-	}
-
-	.main-header h3 {
-		margin-top: 1px;
-		font-size: 18px;
-	}
-
-	.features { 
-		height: 160px;
-	}
-
-	.features ul {
-		margin: 0 6px;
-		font-size: 12px;
-	}
-
-	.features ul li {
-		list-style: none;
-	}
-
-	.gallery {
-		flex-direction: column-reverse;
-		justify-content: space-between;
-		max-width: 100%;
-		text-align: center;
-		font-size: 12px;
-	}
-
-	#contact {
-		line-height: 1.5;
-	}
-
-	.gallery-container {
-		max-width: 100%;
-		border-left: 0px solid white;
-		border-bottom: 5px solid white;
-		height: 350px;
-	}
-
-	.location {
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	.location #map {
-		max-width: 100%;
-		width: 100%;
-		border-bottom: 5px solid white;
-	}
-
-	.location .map-info {
-		margin-top: 25px;
-		margin-bottom: 25px;
-		width: 80%;
-		text-align: center; 
-		font-size: 12px;
+	footer {
+		height: 150px;
 	}
 
 	footer div {
-		width: 90%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		text-align: center;
+		margin: 0 auto;
+	}
+
+	footer p, footer a, footer h4 {
+	font-size: 24px;
 	}
 }
