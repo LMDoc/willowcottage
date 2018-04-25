@@ -17,7 +17,7 @@
 .nav-bar {
 	position: absolute;
 	width: 100%;
-	height: 70px;
+	height: 90px;
 	display: flex;
 	justify-content: space-between;
 	background: rgba(255,255,255,0.5);
@@ -69,7 +69,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: linear-gradient(to bottom, rgba(255,255,255,0.3) 100%,rgba(255,255,255,0.6) 50%), url("./images/main.jpg") center center;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.3) 100%,rgba(255,255,255,0.6) 50%), url("./images/main.JPG") center center;
 	background-size: cover;
 	background-color: white;
 	width: 100%;
@@ -211,7 +211,6 @@
 
 /*local styles*/
 .local {
-	height: 450px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -226,7 +225,7 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: 75px;
+	padding: 35px;
 	width: 80%;
 	margin-top: 20px;
 }
@@ -247,8 +246,7 @@
 	height: 300px;
 	width: 300px;
 	border: 5px solid white;
-	margin: 20px;
-	font-size: 16px;
+	margin: 25px;
 }
 
 .card img {
@@ -279,7 +277,11 @@ footer p, footer a, footer h4 {
 	color: white;
 }
 
-@media only screen and (max-width : 1100px) { 
+@media only screen and (max-width : 1050px) { 
+	.info p, .map-info p, .local-info p {
+		font-size: 14px;
+	}
+
 	.gallery {
 		flex-direction: column-reverse;
 		justify-content: space-between;
@@ -298,56 +300,7 @@ footer p, footer a, footer h4 {
 	}
 
 	.card {
-		font-size: 12px;
 		height: 240px;
-	}
-}
-
-
-/* SMALL SCREEN STYLES */
-@media only screen and (max-width : 768px) {
-	
-	.main-header h1 {
-		font-size: 65px;
-	}
-
-	.main-header h3 {
-		margin-top: 1px;
-		font-size: 24px;
-	}
-
-	.nav-bar img {
-		display: none;
-	}
-
-	.nav-bar ul {
-		margin: 0 auto;
-	}
-
-	.features { 
-		height: 200px;
-	}
-
-	.features ul {
-		margin: 0 35px;
-		font-size: 16px;
-	}
-
-	.gallery {
-		flex-direction: column-reverse;
-		justify-content: space-between;
-		max-width: 100%;
-		text-align: center;
-	}
-
-	#contact {
-		line-height: 1.5;
-	}
-
-	.gallery-container {
-		max-width: 100%;
-		border-left: 0px solid white;
-		border-bottom: 5px solid white; 
 	}
 
 	.location {
@@ -365,6 +318,7 @@ footer p, footer a, footer h4 {
 		margin-top: 25px;
 		margin-bottom: 25px;
 		width: 80%;
+		max-width: 80%;
 		text-align: center;
 	}
 
@@ -374,6 +328,7 @@ footer p, footer a, footer h4 {
 
 	.local-info {
 		text-align: center;
+		font-size: 14px;
 	}
 
 	.local {
@@ -383,6 +338,7 @@ footer p, footer a, footer h4 {
 
 	.cards {
 		flex-direction: column;
+		align-items: center;
 		width: 60%;
 		margin-bottom: 25px;
 	}
@@ -390,9 +346,7 @@ footer p, footer a, footer h4 {
 	.card {
 		text-align: center;
 		border: 3px solid white;
-		font-size: 12px;
-		font-size: 12px;
-		width: 100%;
+		width: 50%;
 		margin-bottom: 0;
 	}
 
@@ -407,8 +361,11 @@ footer p, footer a, footer h4 {
 	} 
 }
 
+
+
 /* MOBILE STYLES */
 @media only screen and (max-width : 479px) {
+	
 	.main-header button, .nav-bar button {
 		padding: 6px 12px;
 	}
@@ -440,6 +397,7 @@ footer p, footer a, footer h4 {
 		justify-content: space-between;
 		max-width: 100%;
 		text-align: center;
+		font-size: 12px;
 	}
 
 	#contact {
@@ -468,7 +426,8 @@ footer p, footer a, footer h4 {
 		margin-top: 25px;
 		margin-bottom: 25px;
 		width: 80%;
-		text-align: center;
+		text-align: center; 
+		font-size: 12px;
 	}
 
 	footer div {
