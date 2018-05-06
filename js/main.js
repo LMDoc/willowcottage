@@ -20,16 +20,22 @@ btns.forEach(btn => btn.addEventListener('click', scrollTo))
 
 const frame = document.querySelector('#slider');
 let i = 0;
-let images = [];
-
-images[0] = './images/inside1.jpg';
-images[1] = './images/inside2.jpg';
-images[2] = './images/outside.JPG';
-images[3] = './images/inside3.jpg';
-images[4] = './images/main.JPG';
-images[5] = './images/inside5.jpg';
-images[6] = './images/inside6.jpg';
-images[7] = './images/patio.JPG';
+let images = 
+  [
+    './images/inside1.jpg',
+    './images/living.jpg',
+    './images/living2.jpg',
+    './images/view.jpg',
+    './images/inside2.jpg',
+    './images/dining.jpg',
+    './images/kitchen.jpg',
+    './images/outside.JPG',
+    './images/inside3.jpg',
+    './images/main.JPG',
+    './images/inside5.jpg',
+    './images/inside6.jpg',
+    './images/patio.JPG',
+  ];
 
 function change() {
 	frame.src = images[i];
